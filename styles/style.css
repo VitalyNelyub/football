@@ -375,9 +375,6 @@ header {
   }
 }
 
-.footerContent {
-}
-
 .socialMedia {
   min-width: 250px;
   display: flex;
@@ -399,15 +396,19 @@ header {
 
 .joinTitle {
   color: rgba(243, 207, 8, 0.801);
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
-.socials__icon {
+.socialsIcon {
   fill: rgba(243, 207, 8, 0.801);
   transition: all 250ms;
 }
 
-.socials__icon:hover,
-.socials__icon:focus {
+.socialsIcon:hover,
+.socialsIcon:focus {
   fill: rgba(189, 69, 9, 0.916);
 }
 
@@ -483,8 +484,9 @@ header {
   }
   @media screen and (min-width: 1200px) {
     width: 250px;
-    font-size: 22px;
-    padding: 8px 22px;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px 45px;
     border-radius: 8px;
     border: 1px solid transparent;
   }
