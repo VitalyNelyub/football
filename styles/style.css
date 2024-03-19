@@ -4,17 +4,17 @@ body {
 }
 
 .container {
-  padding: 21px 60px;
-  margin: 0 auto;
-  /* @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: 320px) {
+    width: 320px;
+    padding: 14px 30px;
+    margin: 0 auto;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1440px;
-  } */
+  }
 }
 
 header {
@@ -25,30 +25,56 @@ header {
 }
 
 .header {
-  display: flex;
+  @media screen and (min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  /* display: flex;
   align-items: center;
 
   justify-content: space-between;
   margin-left: auto;
-  max-width: 1600px;
+  max-width: 1600px; */
+}
+
+.logoImg {
+  @media screen and (min-width: 320px) {
+    width: 160px;
+  }
+  /* width: 260px;
+  height: 70px;
+  color: red; */
 }
 
 .headerList {
-  display: flex;
-  gap: 40px;
+  @media screen and (min-width: 320px) {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* display: flex;
+  gap: 40px; */
 }
 
 .headerItem {
-  font-size: 24px;
+  /* font-size: 24px;
   padding: 4px;
-  line-height: 1.44;
+  line-height: 1.44; */
 }
 
 .headerLink {
-  font-size: 26px;
-  font-weight: 700;
-  color: rgba(243, 207, 8, 0.801);
-  transition: all 250ms;
+  @media screen and (min-width: 320px) {
+    font-size: 16px;
+    color: rgba(243, 207, 8, 0.801);
+    font-weight: 400;
+    transition: all 250ms;
+  }
+  /* font-size: 26px;
+  font-weight: 700; */
 }
 
 .headerLink:hover,
@@ -62,14 +88,22 @@ header {
 }
 
 .loginBtn {
-  background-color: rgba(189, 69, 9, 0.916);
+  @media screen and (min-width: 320px) {
+    background-color: rgba(189, 69, 9, 0.916);
+    font-size: 16px;
+    padding: 8px 22px;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    transition: all 250ms;
+  }
+  /* background-color: rgba(189, 69, 9, 0.916);
   font-size: 24px;
   color: rgba(243, 207, 8, 0.801);
   padding: 8px 22px;
   border-radius: 8px;
   border: 3px solid transparent;
   font-weight: 700;
-  transition: all 250ms;
+  transition: all 250ms; */
 }
 
 .loginBtn:hover,
@@ -81,57 +115,75 @@ header {
   box-shadow: 0 0 10px rgba(189, 69, 9, 0.916);
 }
 
-.logoImg {
-  width: 260px;
-  height: 70px;
-  color: red;
-}
-
 .hero {
-  width: 100%;
+  @media screen and (min-width: 320px) {
+    width: 100%;
+    height: auto;
+    line-height: 27.45px;
+    transform: scaleX(-1);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/heroBg_bat.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  /* width: 100%;
   height: 530px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/heroBg_bat.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+
   max-width: 1600px;
-  transform: scaleX(-1);
-  line-height: 77.45px;
+  line-height: 77.45px; */
 }
 
 .heroContainer {
-  padding-top: 137px;
-  /* padding-left: 60px; */
-  padding-bottom: 174px;
-  /* font-size: 42px; */
-  /* color: rgba(0, 0, 0, 1); */
-  /* display: flex;
-  flex-direction: column;
-  text-align: right; */
-  transform: scaleX(-1);
+  @media screen and (min-width: 320px) {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    transform: scaleX(-1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* padding-top: 137px;
+  padding-bottom: 174px; */
 }
 
 .heroTitle {
+  @media screen and (min-width: 320px) {
+    font-size: 36px;
+  }
   font-size: 64px;
 }
 
 .heroSubText {
+  @media screen and (min-width: 320px) {
+    font-size: 24px;
+  }
   font-size: 40px;
 }
 
 .orderBtn {
-  background-color: transparent;
-  font-size: 24px;
+  @media screen and (min-width: 320px) {
+    background-color: transparent;
+    color: rgba(189, 69, 9, 0.916);
+    font-size: 16px;
+    padding: 8px 22px;
+    border-radius: 8px;
+    border: 3px solid rgba(189, 69, 9, 0.916);
+    transition: all 250ms;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  /* font-size: 24px;
   color: rgba(189, 69, 9, 0.916);
   padding: 12px 22px;
   border: 3px solid rgba(189, 69, 9, 0.916);
   border-radius: 8px;
   font-weight: 700;
-  transition: all 250ms;
+  transition: all 250ms; */
 }
 
 .orderBtn:hover,
@@ -143,44 +195,73 @@ header {
 }
 
 .mainContent {
-  padding-top: 68px;
-  max-width: 1600px;
+  @media screen and (min-width: 320px) {
+    padding-top: 28px;
+  }
+  /* padding-top: 68px;
+  max-width: 1600px; */
 }
 
 .gameOptionsTitle {
-  font-size: 48px;
+  @media screen and (min-width: 320px) {
+    font-size: 28px;
+    line-height: 29.08px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  /* font-size: 48px;
   line-height: 59.08px;
-  margin-bottom: 42px;
+  margin-bottom: 42px; */
 }
 
 .gameOptionsSubTitle {
-  font-size: 24px;
+  @media screen and (min-width: 320px) {
+    font-size: 18px;
+    line-height: 19.05px;
+    margin-bottom: 29px;
+  }
+  /* font-size: 24px;
   line-height: 29.05px;
-  margin-bottom: 39px;
+  margin-bottom: 39px; */
 }
 
 .ballCheckList {
-  display: flex;
+  @media screen and (min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 170px;
   overflow-x: auto;
   white-space: nowrap;
+  margin-bottom: 60px; */
 }
 
 .checkBallItem {
-  display: flex;
+  @media screen and (min-width: 320px) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  /* display: flex;
   align-items: center;
   gap: 42px;
   @media screen and (max-width: 1200px) {
     gap: 10px;
     height: auto;
-  }
+  } */
 }
 
 .checkBallImg {
-  width: 100px;
-  transition: all 2000ms;
+  @media screen and (min-width: 320px) {
+    width: 100px;
+    transition: all 2000ms;
+  }
+  /* width: 100px;
+  transition: all 2000ms; */
 }
 
 .checkBallImg:hover {
@@ -188,16 +269,27 @@ header {
 }
 
 .checkBallInfo {
+  @media screen and (min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+  }
   display: flex;
   flex-direction: column;
 }
 
 .checkBallTitle {
-  font-size: 24px;
-  font-weight: 700;
+  @media screen and (min-width: 320px) {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  /* font-size: 24px;
+  font-weight: 700; */
 }
 
 .checkBallSubTitle {
+  @media screen and (min-width: 320px) {
+    font-size: 18px;
+  }
   display: inline-block;
   font-size: 24px;
 }
@@ -212,16 +304,35 @@ header {
 }
 
 .footer {
-  background-color: rgb(8, 6, 53);
+  @media screen and (min-width: 320px) {
+    width: 100%;
+    background-color: rgb(8, 6, 53);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  /* background-color: rgb(8, 6, 53);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; */
+}
+
+.hidden {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .footerContent {
-  max-width: 1600px;
+  /* max-width: 1600px; */
 }
 
 .socialMedia {
+  @media screen and (min-width: 320px) {
+    width: 250px;
+    display: flex;
+    gap: 10px;
+  }
   min-width: 250px;
   display: flex;
   gap: 30px;
@@ -229,8 +340,12 @@ header {
 }
 
 .socialsFooterList {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 320px) {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 .joinTitle {
@@ -248,6 +363,15 @@ header {
 }
 
 .author {
+  @media screen and (min-width: 320px) {
+    font-size: 10px;
+    color: rgba(173, 149, 13, 0.801);
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgb(8, 6, 53);
+    padding: 12px;
+  }
   font-size: 14px;
   color: rgba(173, 149, 13, 0.801);
   align-items: center;
@@ -269,6 +393,15 @@ header {
 }
 
 .mailBox {
+  @media screen and (min-width: 320px) {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid rgba(173, 149, 13, 0.801);
+    background-color: transparent;
+    color: rgba(243, 207, 8, 0.801);
+    font-size: 16px;
+  }
   width: 400px;
   padding: 14px;
   border-radius: 8px;
@@ -287,15 +420,21 @@ header {
 }
 
 .submitBtn {
-  background-color: rgba(243, 207, 8, 0.801);
+  @media screen and (min-width: 320px) {
+    background-color: rgba(243, 207, 8, 0.801);
+    color: rgba(189, 69, 9, 0.916);
+    font-size: 16px;
+    width: 100%;
+    padding: 8px 22px;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    transition: all 250ms;
+  }
   width: 250px;
   font-size: 22px;
-  color: rgb(186, 178, 178);
-  background-color: rgba(173, 149, 13, 0.801);
   padding: 8px 22px;
   border-radius: 8px;
   border: 1px solid transparent;
-  transition: all 250ms;
 }
 
 .submitBtn:hover,
