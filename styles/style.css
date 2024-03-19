@@ -11,9 +11,12 @@ body {
   }
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding: 24px 20px;
   }
   @media screen and (min-width: 1200px) {
+    min-width: 1200px;
     max-width: 1440px;
+    padding: 21px 60px;
   }
 }
 
@@ -25,27 +28,32 @@ header {
 }
 
 .header {
+  width: 100%;
   @media screen and (min-width: 320px) {
     display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: center;
   }
-  /* display: flex;
-  align-items: center;
-
-  justify-content: space-between;
-  margin-left: auto;
-  max-width: 1600px; */
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .logoImg {
   @media screen and (min-width: 320px) {
     width: 160px;
   }
-  /* width: 260px;
-  height: 70px;
-  color: red; */
+  @media screen and (min-width: 768px) {
+    width: 200px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 250px;
+  }
 }
 
 .headerList {
@@ -56,14 +64,13 @@ header {
     align-items: center;
     text-align: center;
   }
-  /* display: flex;
-  gap: 40px; */
-}
-
-.headerItem {
-  /* font-size: 24px;
-  padding: 4px;
-  line-height: 1.44; */
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 49px;
+  }
 }
 
 .headerLink {
@@ -73,8 +80,12 @@ header {
     font-weight: 400;
     transition: all 250ms;
   }
-  /* font-size: 26px;
-  font-weight: 700; */
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
 }
 
 .headerLink:hover,
@@ -96,14 +107,14 @@ header {
     border: 3px solid transparent;
     transition: all 250ms;
   }
-  /* background-color: rgba(189, 69, 9, 0.916);
-  font-size: 24px;
-  color: rgba(243, 207, 8, 0.801);
-  padding: 8px 22px;
-  border-radius: 8px;
-  border: 3px solid transparent;
-  font-weight: 700;
-  transition: all 250ms; */
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    padding: 8px 22px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+    padding: 16px 45px;
+  }
 }
 
 .loginBtn:hover,
@@ -130,11 +141,6 @@ header {
     background-position: center;
     background-size: cover;
   }
-  /* width: 100%;
-  height: 530px;
-
-  max-width: 1600px;
-  line-height: 77.45px; */
 }
 
 .heroContainer {
@@ -146,22 +152,35 @@ header {
     flex-direction: column;
     gap: 30px;
   }
-  /* padding-top: 137px;
-  padding-bottom: 174px; */
+  @media screen and (min-width: 1200px) {
+    padding-top: 137px;
+    padding-left: 60px;
+    padding-bottom: 159px;
+  }
 }
 
 .heroTitle {
   @media screen and (min-width: 320px) {
     font-size: 36px;
   }
-  font-size: 64px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 64px;
+  }
 }
 
 .heroSubText {
   @media screen and (min-width: 320px) {
     font-size: 24px;
   }
-  font-size: 40px;
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+  }
 }
 
 .orderBtn {
@@ -175,15 +194,19 @@ header {
     transition: all 250ms;
     width: 200px;
     margin: 0 auto;
+    transition: all 250ms;
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+      font-size: 18px;
+      padding: 8px 22px;
+    }
   }
-
-  /* font-size: 24px;
-  color: rgba(189, 69, 9, 0.916);
-  padding: 12px 22px;
-  border: 3px solid rgba(189, 69, 9, 0.916);
-  border-radius: 8px;
-  font-weight: 700;
-  transition: all 250ms; */
+  @media screen and (min-width: 1200px) {
+    width: 280px;
+    font-size: 24px;
+    padding: 16px 45px;
+    font-weight: 700;
+  }
 }
 
 .orderBtn:hover,
@@ -198,8 +221,14 @@ header {
   @media screen and (min-width: 320px) {
     padding-top: 28px;
   }
-  /* padding-top: 68px;
-  max-width: 1600px; */
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-top: 28px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-top: 28px;
+  }
 }
 
 .gameOptionsTitle {
@@ -209,9 +238,14 @@ header {
     margin-bottom: 22px;
     text-align: center;
   }
-  /* font-size: 48px;
-  line-height: 59.08px;
-  margin-bottom: 42px; */
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+    line-height: 59.08px;
+    margin-bottom: 42px;
+  }
 }
 
 .gameOptionsSubTitle {
@@ -220,24 +254,33 @@ header {
     line-height: 19.05px;
     margin-bottom: 29px;
   }
-  /* font-size: 24px;
-  line-height: 29.05px;
-  margin-bottom: 39px; */
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+    line-height: 29.05px;
+  }
 }
 
 .ballCheckList {
+  display: flex;
+
   @media screen and (min-width: 320px) {
-    display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 170px;
-  overflow-x: auto;
-  white-space: nowrap;
-  margin-bottom: 60px; */
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 760px;
+    flex-direction: row;
+    gap: 170px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 60px;
+  }
 }
 
 .checkBallItem {
@@ -246,13 +289,12 @@ header {
     align-items: center;
     gap: 10px;
   }
-  /* display: flex;
-  align-items: center;
-  gap: 42px;
-  @media screen and (max-width: 1200px) {
-    gap: 10px;
-    height: auto;
-  } */
+  @media screen and (min-width: 768px) {
+    width: calc(50% - 10px);
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 500px;
+  }
 }
 
 .checkBallImg {
@@ -260,8 +302,6 @@ header {
     width: 100px;
     transition: all 2000ms;
   }
-  /* width: 100px;
-  transition: all 2000ms; */
 }
 
 .checkBallImg:hover {
@@ -282,16 +322,25 @@ header {
     font-size: 22px;
     font-weight: 700;
   }
-  /* font-size: 24px;
-  font-weight: 700; */
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
 }
 
 .checkBallSubTitle {
+  display: inline-block;
+  font-size: 18px;
   @media screen and (min-width: 320px) {
     font-size: 18px;
   }
-  display: inline-block;
-  font-size: 24px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
 }
 
 .ballCheckList::-webkit-scrollbar {
@@ -306,15 +355,18 @@ header {
 .footer {
   @media screen and (min-width: 320px) {
     width: 100%;
+    padding: 30px;
     background-color: rgb(8, 6, 53);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
   }
-  /* background-color: rgb(8, 6, 53);
-  display: flex;
-  justify-content: space-between; */
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .hidden {
@@ -324,19 +376,18 @@ header {
 }
 
 .footerContent {
-  /* max-width: 1600px; */
 }
 
 .socialMedia {
+  min-width: 250px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
   @media screen and (min-width: 320px) {
     width: 250px;
     display: flex;
     gap: 10px;
   }
-  min-width: 250px;
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
 }
 
 .socialsFooterList {
@@ -344,8 +395,6 @@ header {
     display: flex;
     justify-content: space-around;
   }
-  /* display: flex;
-  justify-content: space-between; */
 }
 
 .joinTitle {
@@ -372,12 +421,14 @@ header {
     background-color: rgb(8, 6, 53);
     padding: 12px;
   }
-  font-size: 14px;
-  color: rgba(173, 149, 13, 0.801);
-  align-items: center;
-  text-align: center;
-  padding: 15px 0;
-  background-color: rgb(8, 6, 53);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    color: rgba(173, 149, 13, 0.801);
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgb(8, 6, 53);
+  }
 }
 
 .submit {
@@ -402,15 +453,15 @@ header {
     color: rgba(243, 207, 8, 0.801);
     font-size: 16px;
   }
-  width: 400px;
-  padding: 14px;
-  border-radius: 8px;
-  outline: none;
-  border: 1px solid rgba(173, 149, 13, 0.801);
-  background-color: transparent;
-  color: rgba(243, 207, 8, 0.801);
-  font-size: 18px;
-  resize: none;
+  @media screen and (min-width: 1200px) {
+    width: 400px;
+    padding: 8px;
+    outline: none;
+    border: 1px solid rgba(173, 149, 13, 0.801);
+    background-color: transparent;
+    color: rgba(243, 207, 8, 0.801);
+    font-size: 18px;
+  }
 }
 
 .mailBox:focus {
@@ -430,11 +481,13 @@ header {
     border: 3px solid transparent;
     transition: all 250ms;
   }
-  width: 250px;
-  font-size: 22px;
-  padding: 8px 22px;
-  border-radius: 8px;
-  border: 1px solid transparent;
+  @media screen and (min-width: 1200px) {
+    width: 250px;
+    font-size: 22px;
+    padding: 8px 22px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+  }
 }
 
 .submitBtn:hover,
